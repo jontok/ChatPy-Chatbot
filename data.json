@@ -47,6 +47,53 @@
         { 
             "questions":[],
             "jokes":[],
-            "unclear":[]
+            "unclear":[],
+            "responses":{
+                "answers":[],
+                "fallbacks":[]
+            }
+        },
+    
+    "responses":
+        {
+            "fallbacks": [
+                "I dont have an anwser for this question",
+                "I can't answer this yet",
+                "I'm sorry if I could tell you i would"
+            ],
+
+            "answers":
+                {
+                    "who build you?": [
+                        "I was build by Jonas Tokmaji",
+                        "My author is Jonas Tokmaji"
+                    ],
+
+                    "how are you doing?":[
+                        
+                    ],
+
+                    "how was your day?": [
+
+                    ],
+
+                    "what have you been doing?": [
+
+                    ],
+
+                    "where are you?": [
+
+                    ],
+
+                    "How old are you?": [
+
+                    ],
+
+                    "Are you okay?": [
+                    
+                    ]
+                }
+
+             
         }
 }
