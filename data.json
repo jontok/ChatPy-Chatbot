@@ -1,0 +1,52 @@
+{
+    "salutaions": [
+        "Good ",
+        "Welcome",
+        "Hello",
+        "Moin Moin"
+    ],
+
+    "adoption": [
+        "Bye",
+        "Bye Bye",
+        "Goodbye",
+        "Have a great one",
+        "See ya",
+        "See you later",
+        "Farewell my friend",
+        "Au revoir",
+        "Ciao"
+    ],
+
+    "questions": [
+        "How are you doing?",
+        "How was your day?",
+        "What have you been doing?",
+        "Where are you?",
+        "How old are you?",
+        "Are you okay?"
+    ],
+
+    "jokes": [
+        "I went to buy some camo pants but couldn’t find any.",
+        "I failed math so many times at school, I can’t even count.",
+        "I was wondering why the frisbee kept getting bigger and bigger, but then it hit me.",
+        "It takes a lot of balls to golf the way I do.",
+        "When life gives you melons, you might be dyslexic."
+    ],
+
+    "unclear_response": [
+        "Sorry I didn't catch that",
+        "Sorry I don't understand",
+        "Can you repeat that",
+        "Would you repeat that",
+        "Can you say that again"
+    ],
+    
+    "done_phrases":
+        { 
+            "questions":[],
+            "jokes":[],
+            "unclear":[]
+        }
+}
