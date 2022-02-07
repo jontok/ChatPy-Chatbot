@@ -63,15 +63,22 @@
             ],
 
             "answers":
-                {
-                    "who build you?": [
-                        "I was build by Jonas Tokmaji",
-                        "My author is Jonas Tokmaji"
-                    ],
-
-                    "how are you doing?":[
-                        
-                    ],
+                {   
+                    "1":
+                    {
+                        "question":["who build you?", "who wrote you?", "who is your author?", "who made you?"],
+                        "answer": [
+                            "I was build by Jonas Tokmaji",
+                            "My author is Jonas Tokmaji"
+                        ],
+                    },
+                    "2": 
+                    {
+                        "question":["how are you doing?"],
+                        "answer" : [
+                            
+                        ]
+                    }
 
                     "how was your day?": [
 
