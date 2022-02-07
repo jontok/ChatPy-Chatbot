@@ -148,6 +148,8 @@ def check_for_joke(user_in):
 
 
 def main(user_in):
+    print(greeting())
+
     while user_in != "stop":
 
         user_in = str(input("Type here --> ")).lower()
@@ -189,6 +191,5 @@ def main(user_in):
 ########################################################################
 # Run #
 ########################################################################
-
-print(greeting())
-main(user_in)
+if __name__ == "__main__":
+    main(user_in)
