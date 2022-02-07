@@ -74,9 +74,11 @@
                     },
                     "2": 
                     {
-                        "question":["how are you doing?"],
+                        "question":["how are you doing?", "how are you?"],
                         "answer" : [
-                            
+                            "I am doing fine, tho i am a bit clunky",
+                            "I don't know I am just a bot",
+                            "Well i could be build better"
                         ]
                     },
 
@@ -84,7 +86,8 @@
                     {
                         "question":["how was your day?"],
                         "answer": [
-
+                            "Pretty boring until you showed up",
+                            "Not to bussy i guess"
                         ]
                     },
 
@@ -92,7 +95,8 @@
                     {
                         "question": ["what have you been doing?"],
                         "answer": [
-
+                            "I haven't done anything",
+                            "Answering some questions for you" 
                         ]
                     },
 
@@ -100,21 +104,25 @@
                     {
                         "question": ["where are you?"],
                         "answer": [
-                            
+                            "I well probably somewhere on a computer",
+                            "Depends on where you put me",
+                            "I dont know i can not check my geo location"
                         ]
                     },
                     
                     "6": 
                     {
-                        "question": ["How old are you?"],
+                        "question": ["how old are you?"],
                         "answer": [
-                            
+                            "I was started as a project on 03.02.2022",
+                            "Depends on when my last update was",
+                            "I am about as old as time. JK I just don't know"
                         ]
                     },
 
                     "7": 
                     {
-                        "question": ["Are you okay?"],
+                        "question": ["are you okay?","are you fine?"],
                         "answer": [
                             "I am not yet working propperly",
                             "I not all of my functions work"
