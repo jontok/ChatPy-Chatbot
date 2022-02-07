@@ -127,6 +127,16 @@
                             "I am not yet working propperly",
                             "I not all of my functions work"
                         ]
+                    },
+
+                    "8":
+                    {
+                        "question":["what can you do?", "what do you do?", "what are your abilitys?", "what can i do with you?"],
+                        "answer":[
+                            "I can ask you questions, answer questions and tell you some pretty badass jokes",
+                            "You can ask me something, ask for a Joke and i can answer some of your questions",
+                            "My abilities are to make jokes, answer questions and give you questions"
+                        ]
                     }
                 }
 
