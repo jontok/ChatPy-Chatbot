@@ -70,7 +70,7 @@
                         "answer": [
                             "I was build by Jonas Tokmaji",
                             "My author is Jonas Tokmaji"
-                        ],
+                        ]
                     },
                     "2": 
                     {
@@ -78,27 +78,48 @@
                         "answer" : [
                             
                         ]
-                    }
+                    },
 
-                    "how was your day?": [
+                    "3":
+                    {
+                        "question":["how was your day?"],
+                        "answer": [
 
-                    ],
+                        ]
+                    },
 
-                    "what have you been doing?": [
+                    "4":
+                    {
+                        "question": ["what have you been doing?"],
+                        "answer": [
 
-                    ],
+                        ]
+                    },
 
-                    "where are you?": [
-
-                    ],
-
-                    "How old are you?": [
-
-                    ],
-
-                    "Are you okay?": [
+                    "5": 
+                    {
+                        "question": ["where are you?"],
+                        "answer": [
+                            
+                        ]
+                    },
                     
-                    ]
+                    "6": 
+                    {
+                        "question": ["How old are you?"],
+                        "answer": [
+                            
+                        ]
+                    },
+
+                    "7": 
+                    {
+                        "question": ["Are you okay?"],
+                        "answer": [
+                            "I am not yet working propperly",
+                            "I not all of my functions work"
+                        ]
+                    }
                 }
 
              
