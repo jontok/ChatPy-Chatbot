@@ -1,6 +1,3 @@
-from distutils.log import debug
-from http.client import responses
-from multiprocessing import Condition
 from random import randint as rand
 from datetime import datetime as time
 from json_parser import parse_to_var
@@ -165,15 +162,7 @@ def main(user_in):
             print(question())
 
         elif user_in[len(user_in)-1] == "?":
-            fallback = "Sorry I don't have an answer yet"
-            used_arr = "responses"
-            print(
-                answer(
-                    user_in,
-                    file,
-                    
-                )
-            )
+            print(answer(user_in))
 
         elif "life, the universe and everything" in user_in:
             print(42)
