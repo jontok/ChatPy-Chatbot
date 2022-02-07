@@ -47,6 +47,89 @@
         { 
             "questions":[],
             "jokes":[],
-            "unclear":[]
+            "unclear":[],
+            "responses":{
+                "answers":[],
+                "fallbacks":[]
+            }
+        },
+    
+    "responses":
+        {
+            "fallbacks": [
+                "I dont have an anwser for this question",
+                "I can't answer this yet",
+                "I'm sorry if I could tell you i would"
+            ],
+
+            "answers":
+                {   
+                    "1":
+                    {
+                        "question":["who build you?", "who wrote you?", "who is your author?", "who made you?"],
+                        "answer": [
+                            "I was build by Jonas Tokmaji",
+                            "My author is Jonas Tokmaji"
+                        ]
+                    },
+                    "2": 
+                    {
+                        "question":["how are you doing?", "how are you?"],
+                        "answer" : [
+                            "I am doing fine, tho i am a bit clunky",
+                            "I don't know I am just a bot",
+                            "Well i could be build better"
+                        ]
+                    },
+
+                    "3":
+                    {
+                        "question":["how was your day?"],
+                        "answer": [
+                            "Pretty boring until you showed up",
+                            "Not to bussy i guess"
+                        ]
+                    },
+
+                    "4":
+                    {
+                        "question": ["what have you been doing?"],
+                        "answer": [
+                            "I haven't done anything",
+                            "Answering some questions for you" 
+                        ]
+                    },
+
+                    "5": 
+                    {
+                        "question": ["where are you?"],
+                        "answer": [
+                            "I well probably somewhere on a computer",
+                            "Depends on where you put me",
+                            "I dont know i can not check my geo location"
+                        ]
+                    },
+                    
+                    "6": 
+                    {
+                        "question": ["how old are you?"],
+                        "answer": [
+                            "I was started as a project on 03.02.2022",
+                            "Depends on when my last update was",
+                            "I am about as old as time. JK I just don't know"
+                        ]
+                    },
+
+                    "7": 
+                    {
+                        "question": ["are you okay?","are you fine?"],
+                        "answer": [
+                            "I am not yet working propperly",
+                            "I not all of my functions work"
+                        ]
+                    }
+                }
+
+             
         }
 }

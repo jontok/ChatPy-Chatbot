@@ -1,8 +1,8 @@
-from distutils.log import debug
-from multiprocessing import Condition
 from random import randint as rand
 from datetime import datetime as time
 from json_parser import parse_to_var
+from answer import answer
+from randomizer import randomize_phrases
 
 ########################################################################
 # Data #
@@ -18,15 +18,13 @@ jokes = parse_to_var(file, "jokes")
 
 unclear_response = parse_to_var(file, "unclear_response")
 
-done_phrases = parse_to_var(file, "done_phrases")
-
 
 user_in = ""
 
 
 
 ########################################################################
-# Logic Functions#
+# Logic Functions #
 ########################################################################
 
 def getdaytime():
@@ -60,20 +58,6 @@ def getdaytime():
 
     return switcher.get(h, "none")
 
-
-def randomize_phrases(phrases, fallback, d_num):
-    p_num = 0
-    x = 0
-    while p_num < len(phrases):
-        p_num = rand(0,len(phrases)-1)
-
-        if p_num in done_phrases[d_num]:
-            x = x + 1
-            if x ==  len(phrases):
-                return fallback
-        else:
-            done_phrases[d_num].append(p_num)
-            return phrases[p_num]
 
 def multi_word_AND_check(words_array_one,words_array_two,user_in):
     part1 = bool
@@ -119,19 +103,14 @@ def greeting():
         greet = salutaions[g] 
     
     return greet
-    
-def answer(uin):
-    i = uin
-    print("I will Answer")
+        
 
 def question(): 
-
     fallback = "Please ask me something"
     used_arr = "questions"
     return randomize_phrases(questions, fallback, used_arr)
 
 def make_joke():
-
     fallback = "I dont have more jokes. Please Ask me some thing"
     used_arr = "jokes"
     return randomize_phrases(jokes, fallback, used_arr)
@@ -151,7 +130,7 @@ def check_for_joke(user_in):
     one = ["joke"]
     two = ["tell", "say", "give", "make"]
     
-    multi_word_AND_check(one,two,user_in)
+    return multi_word_AND_check(one,two,user_in)
 
 # def check_for_greeting(user_in):
     
@@ -164,6 +143,8 @@ def check_for_joke(user_in):
 
 
 def main(user_in):
+    print(greeting())
+
     while user_in != "stop":
 
         user_in = str(input("Type here --> ")).lower()
@@ -174,14 +155,14 @@ def main(user_in):
         # elif check_for_greeting(user_in) == True:
         #     print(question())
             
-        elif check_for_joke(user_in) == True:
+        elif check_for_joke(user_in) is True:
             print(make_joke())
         
         elif user_in[len(user_in)-1] == "!" or user_in[len(user_in)-1] == "." or "question" in user_in and "ask" in user_in:
             print(question())
 
         elif user_in[len(user_in)-1] == "?":
-            answer(user_in)
+            print(answer(user_in))
 
         elif "life, the universe and everything" in user_in:
             print(42)
@@ -195,8 +176,7 @@ def main(user_in):
 
 
 ########################################################################
-# Main Loop #
+# Run #
 ########################################################################
-
-print(greeting())
-main(user_in)
+if __name__ == "__main__":
+    main(user_in)
