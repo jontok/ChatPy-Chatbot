@@ -15,5 +15,6 @@ def randomize_phrases(phrases, fallback, arr_name):
             if x ==  len(phrases):
                 return fallback
         else:
-            done_phrases[arr_name].append(p_num)
-            return phrases[p_num]
+            if arr_name != None:
+                done_phrases[arr_name].append(p_num)
+                return phrases[p_num]

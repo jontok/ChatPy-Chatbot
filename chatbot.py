@@ -109,13 +109,11 @@ def greeting():
         
 
 def question(): 
-
     fallback = "Please ask me something"
     used_arr = "questions"
     return randomize_phrases(questions, fallback, used_arr)
 
 def make_joke():
-
     fallback = "I dont have more jokes. Please Ask me some thing"
     used_arr = "jokes"
     return randomize_phrases(jokes, fallback, used_arr)
@@ -135,7 +133,7 @@ def check_for_joke(user_in):
     one = ["joke"]
     two = ["tell", "say", "give", "make"]
     
-    multi_word_AND_check(one,two,user_in)
+    return multi_word_AND_check(one,two,user_in)
 
 # def check_for_greeting(user_in):
     
@@ -160,7 +158,7 @@ def main(user_in):
         # elif check_for_greeting(user_in) == True:
         #     print(question())
             
-        elif check_for_joke(user_in) == True:
+        elif check_for_joke(user_in) is True:
             print(make_joke())
         
         elif user_in[len(user_in)-1] == "!" or user_in[len(user_in)-1] == "." or "question" in user_in and "ask" in user_in:
