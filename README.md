@@ -4,14 +4,14 @@
 Chatbot written in python
 
 >Be aware this is not a finished or polished product
->Currently only works on the commandline
->GUI coming soon
+
+>Currently only works on the commandline, GUI coming soon
 
 
 ## How to?
 
 - to mark an input as a question put a "?" at the end
-- ask for the chat bot to give you a question
+    - check the [data.json](data.json) to find out which question you can ask
 - ask for the chatbot to tell you a joke
 
 ## Report issues
